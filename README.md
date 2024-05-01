@@ -5,3 +5,15 @@ The codebase is currently being compiled and will be made readily available soon
 
 ![method](docs/method.png)
 
+## Fréchet Radiomics Distance (FRD)
+
+You can find the FRD repository [here](https://github.com/RichardObi/frd-score). 
+
+Let's get started and calculate the FRD with the code below: 
+
+```
+pip install frd-score
+
+python -m frd_score path/to/dataset_A path/to/dataset_B
+```
+

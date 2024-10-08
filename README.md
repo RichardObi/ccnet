@@ -13,9 +13,8 @@ The [Duke Dataset](https://sites.duke.edu/mazurowski/resources/breast-cancer-mri
 
 - [Scripts](src/bash/): Here you can find the scripts to start trainings and inference runs of AEKL, LDM, and ControlNet.
 - [Code](src/python/): Here you can find the code for training, inference and evaluation of the models.
-- [Code](src/configs/): Here you can find the configs for training, inference and evaluation of the models.
-- [Code](src/configs/): Here you can find the configs for training, inference and evaluation of the models.
-- [Data](src/data/): In the LDM_metadata.csv you can find the extracted metadata (e.g. containing scanner and contrast info) that can be input as text into the LDMs and ControlNet
+- [Config](configs/): Here you can find the configs for training, inference and evaluation of the models.
+- [Data](data/): In the LDM_metadata.csv you can find the extracted metadata (e.g. containing scanner and contrast info) that can be input as text into the LDMs and ControlNet
 
 
 ## Fréchet Radiomics Distance (FRD)

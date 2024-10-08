@@ -6,7 +6,6 @@ In MICCAI 2024.
 ![method](docs/method.png)
 
 
-
 ## Getting Started
 
 The [Duke Dataset](https://sites.duke.edu/mazurowski/resources/breast-cancer-mri-dataset/) used in this study is available on [The Cancer Imaging Archive (TCIA)](https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=70226903).
@@ -34,3 +33,5 @@ python -m frd_score path/to/dataset_A path/to/dataset_B
 ## Contact
 
 Any questions, remarks, or suggestions? Please feel free to contact richard[dot]osuala[at]ub[dot]edu.
+
+

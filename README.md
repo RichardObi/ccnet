@@ -29,8 +29,24 @@ pip install frd-score
 python -m frd_score path/to/dataset_A path/to/dataset_B
 ```
 
-## Contact
 
-Any questions, remarks, or suggestions? Please feel free to contact richard[dot]osuala[at]ub[dot]edu.
+## Summary
+
+![poster presentation](./poster.png)
 
 
+## Reference
+Please consider citing our work if you found it useful:
+```bibtex
+@inproceedings{osuala2024towards,
+  title={Towards learning contrast kinetics with multi-condition latent diffusion models},
+  author={Osuala, Richard and Lang, Daniel M and Verma, Preeti and Joshi, Smriti and Tsirikoglou, Apostolia and Skorupko, Grzegorz and Kushibar, Kaisar and Garrucho, Lidia and Pinaya, Walter HL and Diaz, Oliver and others},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
+  pages={713--723},
+  year={2024},
+  organization={Springer}
+}
+```
+
+## Acknowledgements
+This repository borrows and extends the code from the [generative_brain_controlnet](https://github.com/Warvito/generative_brain_controlnet) repo. 

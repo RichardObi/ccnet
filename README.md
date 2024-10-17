@@ -32,7 +32,7 @@ python -m frd_score path/to/dataset_A path/to/dataset_B
 
 ## Summary
 
-![poster presentation](./poster.png)
+![poster presentation](docs/poster.png)
 
 
 ## Reference

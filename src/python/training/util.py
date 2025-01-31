@@ -1411,7 +1411,7 @@ def save_controlnet_inference_sample(run_dir, filename, sample, cond, images, dp
     try:
         sample_postprocessed = interval_mapping(sample_postprocessed, from_min=-1., from_max=1., to_min=0., to_max=1.)
         #sample_postprocessed = np.clip(sample.cpu().numpy(), min_max[0], min_max[1])
-        sample_postprocessed = (sample_postprocessed * 255).astype(np.uint8)
+        sample_postprocessed = np.rint((sample_postprocessed * 255)).astype(np.uint8)
         # TODO Here we could use rgb2gray to convert to grayscale instead of using the first channel only
         im = Image.fromarray(sample_postprocessed[0, 0]) # batch and channel dimension removed (?)
         im.save(output_file_path)
@@ -1430,9 +1430,9 @@ def save_controlnet_inference_sample(run_dir, filename, sample, cond, images, dp
 
         try:
             cond_postprocessed = interval_mapping(cond.cpu().numpy(), from_min=-1., from_max=1., to_min=0., to_max=1.)
-            cond_postprocessed = (cond_postprocessed * 255).astype(np.uint8)
+            cond_postprocessed = np.rint((cond_postprocessed * 255)).astype(np.uint8)
             images_postprocessed = interval_mapping(images.cpu().numpy(), from_min=-1., from_max=1., to_min=0., to_max=1.)
-            images_postprocessed = (images_postprocessed * 255).astype(np.uint8)
+            images_postprocessed = np.rint((images_postprocessed * 255)).astype(np.uint8)
             sample_postprocessed = np.expand_dims(sample_postprocessed[0, 0, :, :], axis=0)
             cond_postprocessed = np.expand_dims(cond_postprocessed[0, 0, :, :], axis=0)
             images_postprocessed = np.expand_dims(images_postprocessed[0, 0, :, :], axis=0)

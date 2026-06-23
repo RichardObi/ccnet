@@ -1,3 +1,9 @@
+# -- UPDATE --
+For stable-diffusion-2-1-base, you can use the link "rios1/stable-diffusion-2-1-base" to load the model. 
+
+The initial SD-2-1-base weights have been removed from hugging-face. Please adjust the training and inference scripts under /src/bash/ to load stable diffusion from [Hugging Face](https://huggingface.co/rios1/stable-diffusion-2-1-base).
+
+
 # CCnet
 ContrastControlNet: Official repository of "Towards Learning Contrast Kinetics with Multi-Condition Latent Diffusion Models"
 In MICCAI 2024.
